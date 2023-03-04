@@ -1,0 +1,8 @@
+.PokemonList {
+	width: 100%;
+}
+
+.PockemonListHead th {
+	text-align: left;
+	padding-bottom: 10px;
+}

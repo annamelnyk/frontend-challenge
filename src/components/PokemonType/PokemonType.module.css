@@ -1,0 +1,18 @@
+.PokemonType {
+	display: inline-block;
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 25px;
+	font-size: 18px;
+	margin: 0 5px;
+	outline: none;
+}
+
+.PokemonType::first-letter {
+	text-transform: uppercase;
+}
+
+.button {
+  margin: 10px 5px;
+  cursor: pointer;
+}

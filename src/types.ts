@@ -6,15 +6,35 @@ export type StatName =
 	| "special-attack"
 	| "special-defense";
 
+export type PokemonTypeName =
+	| "bug"
+	| "dark"
+	| "dragon"
+	| "electric"
+	| "fairy"
+	| "fighting"
+	| "fire"
+	| "flying"
+	| "ghost"
+	| "grass"
+	| "ground"
+	| "ice"
+	| "normal"
+	| "poison"
+	| "psychic"
+	| "rock"
+	| "steel"
+	| "water";
+
 export interface PokemonStat {
 	base_stat: number;
 	effort: number;
 	stat_name: StatName;
 }
 
-export interface PokemonType {
+export interface IPokemonType {
 	slot: number;
-	type_name: string;
+	type_name: PokemonTypeName;
 }
 
 export interface PokemonSprite {
@@ -34,5 +54,5 @@ export interface Pokemon {
 	flavor_text: string;
 	stats: PokemonStat[];
 	sprite: PokemonSprite;
-	types: PokemonType[];
+	types: IPokemonType[];
 }
